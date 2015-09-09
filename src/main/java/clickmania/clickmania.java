@@ -57,13 +57,13 @@ public class clickmania extends HttpServlet {
 		for (int row = 0; row < fieldC.getRowCount(); row++) {
 			for (int column = 0; column < fieldC.getColumnCount(); column++) {
 				Color color = fieldC.getColor(row, column);
-				out.print("<a href=\"?row=" + row + "&column=" + column + "\"><img src=\"resources/clickmania/"
+				out.print("<a href=\"?path=clickmania&row=" + row + "&column=" + column + "\"><img src=\"resources/clickmania/"
 						+ color.getValue() + ".png\" alt=\"sdf\"/></a>");
 			}
 			out.println("<br>");
 		}
 
-		out.println("<a href=\"?move=new\">New Game</a>");
+		out.println("<a href=\"?path=clickmania&move=new\">New Game</a>");
 		out.println("</center>");
 		out.println("</body>");
 		out.println("</html>");

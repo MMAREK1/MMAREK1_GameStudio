@@ -32,7 +32,7 @@ public class gameSelection extends HttpServlet {
 		for (Game g : gamesD) {
 			System.out.println(g);
 			out.print("<a href=\"index.xhtml?path=" + g.getGamePath() + "\"><img src=\"" + g.getGamePicture()
-					+ "\"/alt=\"" + g.getGameName() + "  height=\"150\" width=\"150\" \"></a>");
+					+ "\"/alt=\"" + g.getGameName() + "\"height=\"150\" width=\"150\" \"></a>");
 			count++;
 			if (count % 2 == 0) {
 				out.println("<br>");

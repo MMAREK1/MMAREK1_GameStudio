@@ -19,5 +19,5 @@
 --insert into Member (id, name, email, phone_number) values (0, 'John Smith', 'john.smith@mailinator.com', '2125551212') 
 insert into game (id, gameName, gamePath, gamePicture) values(0,'minesweeper','mines','resources/minesweeper/minesweeper.png')
 insert into game (id, gameName, gamePath, gamePicture) values(1,'npuzzle','stones','resources/npuzzle/npuzzle.png')
-insert into game (id, gameName, gamePath, gamePicture) values(2,'puzzle', 'pictures', 'resources/puzzle/picture.png')
-insert into game (id, gameName, gamePath, gamePicture) values(3,'GuessNumber','greeting.xhtml','resources/number/number.png')
+insert into game (id, gameName, gamePath, gamePicture) values(2,'puzzle', 'pictures', 'resources/puzzle/puzzle.png')
+insert into game (id, gameName, gamePath, gamePicture) values(3,'clickmania','clickmania','resources/clickmania/clickmania.png')
