@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+	
+	<head>
+		<title>Login screen</title>
+		
+		<style> 
+			.invalid {color: red;}
+		</style>
+	</head>
+
+	<body>
+		<h:form>
+			Name:
+			<h:inputText id="name" value="#{user.name}"/>
+			<h:message for="name" errorClass="invalid" />			
+			<br/>
+			
+			Password:
+			<h:inputText id="passwd" value="#{user.passwd}"/>
+			<h:message for="passwd" errorClass="invalid" />			
+			<br/>
+		
+			<h:commandButton action="index.xhtml" value="Sign In"/>
+			<h:commandButton action="index.xhtml" value="Sign Up"/>
+			 
+   		</h:form>
+	</body>
+</html>
